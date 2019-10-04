@@ -5,9 +5,9 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <nav className="nav">
-                <a href="">Home <a href="">
-                <a href="">Teams <a href="">
-                <a href="">Players <a href="">
+                <a href="">Home </a>
+                <a href="">Teams </a>
+                <a href="">Players </a>
 
             </nav>
             <form className="search">
@@ -18,3 +18,5 @@ const Navbar = () => {
     )
 
 }
+
+export default Navbar
