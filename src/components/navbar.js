@@ -11,8 +11,10 @@ const Navbar = () => {
 
             </nav>
             <form className="search">
+            <label >
             Search
-            <input type="text" name="search" placeholder="Search" /> 
+            <input className="search-bar" type="text" name="search" placeholder="Search" /> 
+            </label>
             </form>
         </div>
     )

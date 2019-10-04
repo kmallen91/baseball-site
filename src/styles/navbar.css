@@ -13,4 +13,12 @@
 
 .nav a{
     text-decoration: none;
+    color: black;
+}
+.nav a:visited{
+    color: black;
+}
+
+.search-bar{
+    margin-left: 10px;
 }
