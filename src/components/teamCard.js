@@ -22,7 +22,7 @@ const TeamCard = () => {
     }, [])
 
     return (
-        <div>
+        <div className="card-container">
         {teams.map(team => (
             <div className="card" key={team.Key}>
                 <h2 className="team-name"> {team.Name} </h2>
