@@ -23,7 +23,7 @@ const IndividualTeam = props => {
       .catch(err => console.log("error from get individual team", err));
   }, []);
 
-  return <div className="individual-team-container">TEST</div>;
+  return <div className="individual-team-container">Team Container</div>;
 };
 
 export default IndividualTeam;
