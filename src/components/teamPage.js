@@ -5,15 +5,10 @@ import TeamCard from './teamCard.js'
 const TeamPage = () => {
 
 return (
-    <div >
-    
-        <TeamCard />
-    
+    <div >    
+        <TeamCard />    
     </div>
-
-
 )
-
 }
 
 export default TeamPage
