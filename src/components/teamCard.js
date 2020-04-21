@@ -2,7 +2,7 @@ import React from "react";
 
 
 const TeamCard = (props) => {
-  const { name, city, league, division } = props
+  const { name, city, league, division, logo } = props
   return (
     <div >      
         <div className="card" >
@@ -11,6 +11,7 @@ const TeamCard = (props) => {
           <p className="team_division">
             {league} {division}
           </p>
+          <img className='team-logo' src={logo} />
         </div>
       
     </div>

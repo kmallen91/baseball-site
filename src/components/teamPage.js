@@ -30,7 +30,7 @@ const TeamPage = () => {
     <div className="card-container" >
         {teams.map(team => (
             <Link to={`/teams/${team.Name}`} >
-            <TeamCard key={team.Key} name={team.Name} city={team.City} league={team.League} division={team.Division}/>
+            <TeamCard key={team.Key} name={team.Name} city={team.City} league={team.League} division={team.Division} logo ={team.WikipediaLogoUrl}/>
             </Link>
         ))}
     

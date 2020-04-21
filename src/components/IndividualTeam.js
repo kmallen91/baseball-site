@@ -21,7 +21,7 @@ const IndividualTeam = props => {
         setPlayers(res.data);
       })
       .catch(err => console.log("error from get individual team", err));
-  }, []);
+  }, [setPlayers]);
 
   return <div className="individual-team-container">Team Container</div>;
 };
