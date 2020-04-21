@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 
 const TeamCard = (props) => {
-  const { key, name, city, league, division } = props
+  const { name, city, league, division } = props
   return (
     <div >      
         <div className="card" >
