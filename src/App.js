@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path="/" component={Homepage} />
-      <Route path="/teams" component={TeamPage} />
-      <Route path='/movies/:id' render={props => <IndividualTeam {...props} />} />
+      <Route exact path="/teams" component={TeamPage} />
+      <Route path='/teams/:id' render={props => <IndividualTeam {...props} />} />
     </div>
   );
 }
