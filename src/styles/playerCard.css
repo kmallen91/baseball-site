@@ -1,4 +1,4 @@
-.card-container{
+.individual-team-container{
     padding: 5vh;
     display:flex;
     flex-wrap:wrap;
@@ -6,14 +6,14 @@
 
 }
 
-.team-card {
-    margin: 3rem;
-    padding: 2rem;
+.player-card {
+    margin: 1rem;
+    padding: 1rem;
     background:darkgray;
     color:white
 }
 
-.team-logo {
-    height: 10rem;
-    width: 10rem;
+.player-photo {
+    height: 5rem;
+    width: 5rem;
 }

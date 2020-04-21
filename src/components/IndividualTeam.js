@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import useInput from "./useInput";
 import axios from "axios";
+import PlayerCard from './playerCard'
 
 const IndividualTeam = props => {
   const [players, setPlayers] = useInput();
   const window_url = window.location.pathname.split('/')
   const team_name = window_url[2]
-  console.log('test window url', team_name)
 
   useEffect(() => {
     axios
@@ -31,7 +31,7 @@ const IndividualTeam = props => {
 
    <div className="individual-team-container">{team_name}
     {players && players.map(player => (
-      <p>{player.FirstName} {player.LastName}</p>
+      <PlayerCard {...player} />
     ))}
   
     </div>
