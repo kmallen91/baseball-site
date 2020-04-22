@@ -1,0 +1,10 @@
+.player-container{
+    display:flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.player-page-photo{
+    height: 15rem;
+    width: 10rem;
+}
