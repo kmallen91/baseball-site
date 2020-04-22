@@ -9,11 +9,11 @@
 .player-card {
     margin: 1rem;
     padding: 1rem;
-    background:darkgray;
+    background:black;
     color:white
 }
 
 .player-photo {
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width: 7rem;
 }
