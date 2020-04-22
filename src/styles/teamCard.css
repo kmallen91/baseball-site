@@ -9,7 +9,7 @@
 .team-card {
     margin: 3rem;
     padding: 2rem;
-    background:darkgray;
+    background:rgba(15, 14, 14, 0.87);
     color:white
 }
 

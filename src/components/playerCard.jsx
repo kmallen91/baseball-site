@@ -2,8 +2,7 @@ import React from 'react'
 import '../styles/playerCard.css'
 
 const PlayerCard = (props) => {
-    const { FirstName, LastName, BatHand, ThrowHand, Height, Weight, BirthDate, College, PhotoUrl, Experience } = props
-    console.log('photo test', PhotoUrl)
+    const { FirstName, LastName, BatHand, ThrowHand, Height, Weight, BirthDate, College, PhotoUrl, Experience, Position } = props
 
     function formatDate(date) {
         let d = new Date(date),
@@ -31,14 +30,23 @@ const PlayerCard = (props) => {
     return (
       <div >      
           <div className="player-card" >
-            <img className='player-photo' src={PhotoUrl} />
-            <h2 className="player-name"> {FirstName} {LastName} </h2>
-            <h3 className="player-bats-hits"> Bats: {BatHand} Throws: {ThrowHand} </h3>
-            <p className="player-height-weight">
+            <img className='player-photo player-info' src={PhotoUrl} alt=''/>
+            <h2 className="player-name player-info"> {FirstName} {LastName} </h2>
+            <h3 className="player-bats-hits player-info"> Bats: {BatHand} Throws: {ThrowHand} </h3>
+            <p className="player-age">
+              Position: {Position}
+            </p>
+            <p className="player-height-weight player-info">
               Height: {formattedHeight} Weight: {Weight}lbs.
             </p>
-            <p className="player-age">
-              Birthdate: {formattedBirthDay} College: {College} Years in League: {Experience}
+            <p className="player-info">
+              Birthdate: {formattedBirthDay} 
+            </p>
+            <p className="player-info">
+              College: {College ? College : 'N/A'} 
+            </p>
+            <p className="player-info">
+              Years in League: {Experience}
             </p>
           </div>
         

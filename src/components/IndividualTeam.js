@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import useInput from "./useInput";
 import axios from "axios";
 import PlayerCard from './playerCard'
+import { Link } from "react-router-dom";
 
 const IndividualTeam = props => {
   const [players, setPlayers] = useInput();
@@ -28,13 +29,17 @@ const IndividualTeam = props => {
 
   return (
 
-
-   <div className="individual-team-container">{team_name}
+    <>
+   <h2 className='team-header'>{team_name} </h2>
+   <div className="individual-team-container">
     {players && players.map(player => (
+      <Link to={`/players/${player.PlayerID}`}>
       <PlayerCard {...player} />
+      </Link>
     ))}
   
     </div>
+    </>
   )
 };
 

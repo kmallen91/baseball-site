@@ -1,12 +1,18 @@
+.team-header{
+    padding-top: 2rem;
+}
+
 .individual-team-container{
     padding: 5vh;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    text-decoration: none;
 
 }
 
 .player-card {
+    text-decoration: none;
     margin: 1rem;
     padding: 1rem;
     background:black;
@@ -16,4 +22,8 @@
 .player-photo {
     height: 10rem;
     width: 7rem;
+}
+
+.player-info{
+    text-decoration: none;
 }

@@ -12,7 +12,7 @@ const TeamCard = (props) => {
           <p className="team_division">
             {league} {division}
           </p>
-          <img className='team-logo' src={logo} />
+          <img className='team-logo' src={logo} alt=''/>
         </div>
       
     </div>
