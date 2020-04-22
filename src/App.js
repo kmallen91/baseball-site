@@ -4,7 +4,8 @@ import { Route } from "react-router-dom";
 import Navbar from "./components/navbar.js";
 import Homepage from "./components/homepage.js";
 import TeamPage from "./components/teamPage.js";
-import PlayerPage from './components/playerPage'
+import PlayerPage from './components/playerPage';
+import AllPlayersPage from './components/allPlayersPage'
 
 
 //Styling
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Route exact path="/" component={Homepage} />
       <Route exact path="/teams" component={TeamPage} />
+      <Route exact path="/players" component={AllPlayersPage} />
       <Route path='/teams/:id' render={props => <IndividualTeam {...props} />} />
       <Route path='/players/:id' render={props => <PlayerPage {...props} />} />
     </div>
