@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/playerCard.css'
 
 const PlayerCard = (props) => {
-    const { FirstName, LastName, BatHand, ThrowHand, Height, Weight, BirthDate, College, PhotoUrl, Experience, Position } = props
+    const { FirstName, LastName, BatHand, ThrowHand, Height, Weight, BirthDate, College, PhotoUrl, Experience, Position, Team } = props
 
     function formatDate(date) {
         let d = new Date(date),
@@ -32,6 +32,7 @@ const PlayerCard = (props) => {
           <div className="player-card" >
             <img className='player-photo player-info' src={PhotoUrl} alt=''/>
             <h2 className="player-name player-info"> {FirstName} {LastName} </h2>
+            <h3 className="player-info"> Team: {Team} </h3>
             <h3 className="player-bats-hits player-info"> Bats: {BatHand} Throws: {ThrowHand} </h3>
             <p className="player-age">
               Position: {Position}
