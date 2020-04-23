@@ -3,17 +3,35 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    text-decoration: none;
 
 }
 
-.team-card {
+.team-card{
     margin: 3rem;
     padding: 2rem;
-    background:rgba(15, 14, 14, 0.87);
-    color:white
+    background:white;
+    color:black;
+    text-decoration: none;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    
+}
+.team-card :link :visited{
+    color:black;
+    text-decoration: none;
 }
 
 .team-logo {
     height: 10rem;
     width: 10rem;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black
+}
+a:link {
+    text-decoration: none;
+    color:black;
 }

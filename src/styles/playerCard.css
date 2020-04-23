@@ -15,8 +15,10 @@
     text-decoration: none;
     margin: 1rem;
     padding: 1rem;
-    background:black;
-    color:white
+    background:rgb(240, 239, 239);
+    color:black;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
 }
 
 .player-photo {
@@ -24,6 +26,11 @@
     width: 7rem;
 }
 
-.player-info{
+a:visited {
     text-decoration: none;
+    color:black
+}
+a:link {
+    text-decoration: none;
+    color:black;
 }
