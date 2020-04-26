@@ -37,7 +37,7 @@ const AllPlayersPage = () => {
   )}
   else {
       return (
-          <div>
+          <div className='loading'>
               Loading...
           </div>
       )

@@ -26,16 +26,25 @@ const TeamPage = () => {
       });
   }, [setTeams]);
 
-  return (
-    <div className="card-container" >
-        {teams.map(team => (
-            <Link to={`/teams/${team.Key}`} >
-            <TeamCard key={team.Key} name={team.Name} city={team.City} league={team.League} division={team.Division} logo ={team.WikipediaLogoUrl}/>
-            </Link>
-        ))}
-    
-    </div>
-  )
+  if (teams) {
+    return (
+      <div className="card-container" >
+          {teams.map(team => (
+              <Link to={`/teams/${team.Key}`} >
+              <TeamCard key={team.Key} name={team.Name} city={team.City} league={team.League} division={team.Division} logo ={team.WikipediaLogoUrl}/>
+              </Link>
+          ))}
+      
+      </div>
+    )
+  }
+  else {
+    return (
+      <div className='loading'>
+        Loading...
+      </div>
+    )
+  }
 
 }
 
