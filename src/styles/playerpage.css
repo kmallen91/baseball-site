@@ -7,6 +7,10 @@
     width: 10rem;
 }
 
+.player-info-container{
+    padding-bottom: 2rem;
+}
+
 .player-stat-container{
     text-align: left;
     padding: 2rem 2rem 2rem 10rem;
