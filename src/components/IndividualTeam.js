@@ -32,7 +32,9 @@ const IndividualTeam = props => {
     <>
    <h2 className='team-header'>{team_name} </h2>
    <div className="individual-team-container">
-    {players && players.map(player => (
+    {players && players
+    .filter(player => player.Status == 'Active')
+    .map(player => (
       <Link to={`/players/${player.PlayerID}`}>
       <PlayerCard {...player} />
       </Link>
