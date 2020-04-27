@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Route } from "react-router-dom";
 
 //Context
@@ -17,6 +17,8 @@ import "./styles/navbar.css";
 import "./styles/teamCard.css";
 import "./App.css";
 import "./styles/homepage.css";
+
+const { baseballState, setBaseballState } = useContext(BaseballContext)
 
 
 function App() {
