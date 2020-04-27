@@ -1,6 +1,9 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
+//Context
+import { BaseballContext } from './context/BaseballContext'
+
 //Components
 import Navbar from "./components/navbar.js";
 import Homepage from "./components/homepage.js";
@@ -18,12 +21,14 @@ import "./styles/homepage.css";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/teams" component={TeamPage} />
-      <Route exact path="/players" component={AllPlayersPage} />
-      <Route path='/teams/:id' render={props => <IndividualTeam {...props} />} />
-      <Route path='/players/:id' render={props => <PlayerPage {...props} />} />
+      <BaseballContext>
+        <Navbar />
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/teams" component={TeamPage} />
+        <Route exact path="/players" component={AllPlayersPage} />
+        <Route path='/teams/:id' render={props => <IndividualTeam {...props} />} />
+        <Route path='/players/:id' render={props => <PlayerPage {...props} />} />
+      </BaseballContext>
     </div>
   );
 }
