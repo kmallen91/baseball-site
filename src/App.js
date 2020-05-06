@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import { Route } from "react-router-dom";
 
 //Context
@@ -18,20 +18,30 @@ import "./styles/teamCard.css";
 import "./App.css";
 import "./styles/homepage.css";
 
-const { baseballState, setBaseballState } = useContext(BaseballContext)
+
 
 
 function App() {
+
+  const [baseballState, setBaseballState] = useState({
+      players: [],
+      teams: [],
+      selectedTeam1: [],
+      selectedTeam2: [],
+      selectedPlayer1: [],
+      selectedPlayer2: [],
+  
+  })
   return (
     <div className="App">
-      <BaseballContext>
+      <BaseballContext.Provider value={{baseballState, setBaseballState}} >
         <Navbar />
         <Route exact path="/" component={Homepage} />
         <Route exact path="/teams" component={TeamPage} />
         <Route exact path="/players" component={AllPlayersPage} />
         <Route path='/teams/:id' render={props => <IndividualTeam {...props} />} />
         <Route path='/players/:id' render={props => <PlayerPage {...props} />} />
-      </BaseballContext>
+      </BaseballContext.Provider>
     </div>
   );
 }
