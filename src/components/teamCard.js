@@ -1,5 +1,5 @@
 import React from "react";
-import IndividualTeam from "./IndividualTeam";
+
 
 
 const TeamCard = (props) => {

@@ -51,7 +51,7 @@ const PlayerPage = () => {
     }, []);
 
   
-  if (player && stats && player.Status == 'Active'){
+  if (player && stats && player.Status === 'Active'){
     const {Status, FirstName, LastName, BatHand, ThrowHand, Height, Weight, BirthDate, College, PhotoUrl, Experience, Position } = player
     const {PositionCategory, Started, Games, AtBats, Runs, Hits, Singles, Doubles, Triples, HomeRuns, RunsBattedIn, BattingAverage, Strikeouts, Walks, StolenBases, PitchesThrown, PitchingBattingAverageAgainst, PitchingBlownSaves, PitchingCompleteGames, PitchingDoubles, PitchingEarnedRuns, PitchingFlyOuts, PitchingHitByPitch, PitchingHits, PitchingNoHitters, PitchingOnBasePercentage, PitchingOnBasePlusSlugging, PitchingPerfectGames, PitchingPlateAppearances, PitchingQualityStarts, PitchingRuns, PitchingShutOuts, PitchingSingles, PitchingStrikeouts, PitchingStrikeoutsPerNineInnings, PitchingTotalBases, PitchingTriples, PitchingWalks, PitchingWalksPerNineInnings, Saves, PitchingHomeRuns } = stats
 
@@ -78,7 +78,7 @@ const PlayerPage = () => {
     const formattedBirthDay = formatDate(BirthDate)
     const formattedHeight = formatHeight(Height)
 
-    if (PositionCategory == 'P') {
+    if (PositionCategory === 'P') {
       return (
         <div className='player-container'>
             <img className='player-page-photo player-info' src={PhotoUrl} alt=''/>
@@ -175,7 +175,7 @@ const PlayerPage = () => {
         </div>
     )}
   }   
-  else if (player && player.Status != 'Active'){
+  else if (player && player.Status !== 'Active'){
     return (
       <div className='not-active'>
         Player Not on Active Roster
