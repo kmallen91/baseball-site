@@ -4,7 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import TeamCard from './teamCard.js'
 
-
 const TeamPage = () => {
 
     const [teams, setTeams] = useInput([]);
