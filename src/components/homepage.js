@@ -10,10 +10,6 @@ return (
         <Link to ='/teams'>Visit the Teams here!</Link><br/> <br/>    
         <Link to ='/players'>Find all the Players here!</Link>    
     </div>
-
-
-)
-
-}
+)}
 
 export default Homepage
