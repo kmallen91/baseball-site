@@ -19,7 +19,6 @@ import "./App.css";
 import "./styles/homepage.css";
 
 
-
 function App() {
 
   const [baseballState, setBaseballState] = useState({
