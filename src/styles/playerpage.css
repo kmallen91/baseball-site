@@ -1,17 +1,21 @@
 .player-container{    
+    display:flex;
+    flex-wrap: wrap;
     padding-top: 2rem;
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: 17vw;
+    padding-right: 10vw;
 }
 
 .player-page-photo{
     height: 15rem;
     width: 10rem;
+    padding: 2rem;
+    margin-right: 8vw;
 }
 
 .player-info-container{
     font-size: 1.25rem;
-    padding-bottom: 2rem;
+    padding: 1rem 10vw 2rem 10vw;
     border: 0.5rem solid black;
     border-radius: 1rem;
     margin: 1rem;
@@ -19,10 +23,10 @@
 
 .player-stat-container{
     text-align: left;
-    padding: 2rem 2rem 2rem 10vw;
+    padding: 2rem 33vw 2rem 15vw;
     border: 0.5rem solid black;
     text-decoration: none;
-    margin: 1rem;
+    margin: 2rem;
     background:rgb(240, 239, 239);
     color:black;
     border: 0.5rem solid black;
