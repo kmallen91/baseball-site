@@ -100,6 +100,9 @@ const PlayerPage = () => {
               <p className="player-info">
                 Years in League: {Experience}
               </p>
+              <p className="player-info">
+                Status: {Status}
+              </p>
             </div>
             
             <div className='player-stat-container'>
