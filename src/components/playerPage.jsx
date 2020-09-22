@@ -191,9 +191,7 @@ const PlayerPage = () => {
         Loading...
       </div>
     )
-  }
-  
-    
+  }    
 }
 
 export default PlayerPage
