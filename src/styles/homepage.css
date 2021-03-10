@@ -4,6 +4,18 @@
 
 }
 
-.team-link{
-    border: 0.1rem, black, solid;
+a{
+    margin-bottom: 5rem;
+}
+
+a.team-link{
+    border: 0.2rem solid black;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+a.player-link{
+    border: 0.2rem solid black;
+    padding: 1rem;
+
 }
