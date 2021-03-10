@@ -1,4 +1,9 @@
 .page-container{
     font-size: 3rem;
     margin:10vh;
+
+}
+
+.team-link{
+    border: 0.1rem, black, solid;
 }
